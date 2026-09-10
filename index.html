@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <title>Météo</title>
+  <script type="module" crossorigin src="/APImeteo/assets/index-CNdcZXQO.js"></script>
+  <link rel="stylesheet" crossorigin href="/APImeteo/assets/index-w_qpt5fg.css">
+</head>
+<body>
+   <h1 id = "titre-ville">Prévisions Météo</h1> 
+      <div id="btn-container">
+    <input type="text" id="ville-input" placeholder="Entrez une ville">
+    <button id="btnRechercher"><i class="fa-solid fa-magnifying-glass"></i></button>
+</div>
+   <div id="erreur"></div>
+   <div id="loader" style="display: none;"><i class="fa-solid fa-spinner fa-spin fa-2x" style="color: white;"></i></div>
+   <div id="resultat"></div>
+</body>
+</html>
