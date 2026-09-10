@@ -1,0 +1,88 @@
+body {
+    font-family: "Nunito", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background: #00fff0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0083fe, #00fff0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0083fe, #00fff0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+body h1{
+  font-family: "Nunito", sans-serif;
+  color: white;
+  margin-bottom: 50px;
+}
+
+
+#btn-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+#ville-input {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+#btnRechercher {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background: #fffc00;
+    background: linear-gradient(to right, #ffffff, #fffc00);
+}
+
+#resultat{
+    display:flex;
+    gap: 12px;
+    flex-wrap: wrap;
+
+}
+.carte{
+    flex: 1;
+    min-width:130px;
+    background: #f1f5f9;
+    border-radius: 8px;
+    padding: 1rem;
+    display:flex;
+    flex-direction: column;
+    gap:6px;
+    margin-left:20px;
+
+    
+}
+
+.weather-icon {
+    font-size: 2rem;
+    text-align: center;
+    margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    #btn-container {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    #ville-input, #btnRechercher {
+        width: 100%;
+    }
+
+    .carte {
+        margin-left: 0;
+        flex: 1 1 100%;
+    }
+}
